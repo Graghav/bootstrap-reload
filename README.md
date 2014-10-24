@@ -10,6 +10,23 @@ Also includes handler for manual trigger and timed intervals.
 
 ## Usage
 
+`````html
+<div class="container">
+	<!--refresh widget-->
+        <div class="panel panel-default" data-url="/fetch-data">
+          <div class="panel-heading"><a class="pull-right" href="#"><span class="fa fa-refresh"></span></a> Refresh Widget</div>
+          <div class="panel-body panel-refresh">
+         	<div class="refresh-container"><i class="refresh-spinner fa fa-spinner fa-spin fa-5x"></i></div>
+            <h4>Refresh Me</h4>
+              <div class="refresh-data"> 
+              	<!-- The Received data will be placed here -->
+              </div>
+          </div>
+        </div>
+    <!--refresh widget-->
+</div>
+`````
+
 `````javascript
 $(".panel").reload(options);
 
